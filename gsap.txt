@@ -1,0 +1,2 @@
+gsap.to("",{})       // intial to final
+gsap.from("",{})    // final to initial
