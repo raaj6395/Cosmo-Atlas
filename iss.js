@@ -1,15 +1,19 @@
-let url ='http://api.open-notify.org/iss-now.json';
+
+
+let url1 ='https://api.wheretheiss.at/v1/satellites/25544';
 let lat = document.getElementById("lat");
 let lon = document.getElementById("lon");
-
+let alt = document.getElementById("alt");
+let vel = document.getElementById("vel");
 async function getISS(){
-    let response = await fetch(url);
-    let data = await response.json();
-    console.log(data);
-    lat.textContent = data.iss_position.latitude;
-    lon.textContent = data.iss_position.longitude;
-
+      let response = await fetch(url1);
+      let data = await response.json();
+      console.log(data);
+      lat.textContent = data.latitude;
+      lon.textContent = data.longitude;
+      alt.textContent = data.altitude;
+      vel.textContent = data.velocity;
+      
 }
-setInterval (getISS,1000);
-
+setInterval(getISS,1200);
 

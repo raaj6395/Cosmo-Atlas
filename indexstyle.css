@@ -140,8 +140,13 @@ z-index: 99;
     height: 40vh;
     width: 60%;
 }
-.latitude, .longitude{
+.latitude, .longitude,.altitude,.velocity{
     color: white;
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+    row-gap: 1.5rem;
+    font-weight: 400;
 }
 #iss_image{
     background-image: url(assets/space.jpg);  
