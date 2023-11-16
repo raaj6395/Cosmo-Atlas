@@ -19,6 +19,18 @@ gsap.from(".Events",{
     // rotate : 180,
     // scale : 3.5
 })
+// Initialize SplitType on the desired element(s)
+const myText = new SplitType('.quote');
+ 
+// Animate characters with GSAP
+gsap.to('.char', {
+  y:0,
+  stagger: 0.05,
+  delay: 0.2,
+  duration: .3,
+});
+
+
 
 // gsap.from(".Events_odd",{
 //     x:1000,
