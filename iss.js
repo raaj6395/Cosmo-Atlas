@@ -5,7 +5,10 @@ let lat = document.getElementById("lat");
 let lon = document.getElementById("lon");
 let alt = document.getElementById("alt");
 let vel = document.getElementById("vel");
+
+
 async function getISS(){
+      try{
       let response = await fetch(url1);
       let data = await response.json();
       console.log(data);
@@ -13,6 +16,14 @@ async function getISS(){
       lon.textContent = data.longitude;
       alt.textContent = data.altitude;
       vel.textContent = data.velocity;
+      }
+      catch(error){
+            console.error(error);
+            lat.textContent= "ERROR"
+            lon.textContent= "ERROR"
+            alt.textContent= "ERROR"
+            vel.textContent= "ERROR"
+      }
       
 }
 setInterval(getISS,1200);
