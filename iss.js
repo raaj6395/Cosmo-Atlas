@@ -7,7 +7,8 @@ let alt = document.getElementById("alt");
 let vel = document.getElementById("vel");
 
 
-async function getISS(){
+
+let check = true;async function getISS(){
       try{
       let response = await fetch(url1);
       let data = await response.json();
@@ -22,9 +23,9 @@ async function getISS(){
             lat.textContent= "ERROR"
             lon.textContent= "ERROR"
             alt.textContent= "ERROR"
-            vel.textContent= "ERROR"
+            vel.textContent= "ERROR"     
       }
       
 }
-setInterval(getISS,1200);
+// setInterval(getISS,1200);
 
