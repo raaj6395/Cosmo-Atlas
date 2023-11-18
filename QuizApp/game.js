@@ -17,7 +17,7 @@ let questions = [];
 fetch('https://api.openai.com/v1/chat/completions', {
   method: 'POST',
   headers: {
-    'Authorization': 'Bearer ' + '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',
+    'Authorization': 'Bearer ' + 'place your key here',
     'Content-type': 'application/json'
   },
   // body: '{\n  "model": "gpt-3.5-turbo-1106",\n  "response_format": {\n    "type": "json_object"\n  },\n  "messages": [\n    {\n      "role": "system",\n      "content": "You are a helpful assistant designed to output JSON."\n    },\n    {\n      "role": "user",\n      "content": "make a quiz questions with answers based on space exploration and give atleast 10 questions make it multiple choice questions return it as a result of a request made by a browser inform of a json text which i can parse do not write naything extra in response to my request only json"\n    }\n  ]\n}',
