@@ -27,5 +27,5 @@ let check = true;async function getISS(){
       }
       
 }
-// setInterval(getISS,1200);
+setInterval(getISS,1200);
 
