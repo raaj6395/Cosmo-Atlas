@@ -11,7 +11,7 @@
    
 </head>
 <body>
-    <section class="wrapper">
+  <section class="wrapper">
         <div id="stars"></div>
         <div id="stars2"></div>
         <div id="stars3"></div>
@@ -29,10 +29,10 @@
           
             <ul class="nav_li">
                 <li  ><a href="#home">Home</a></li>
-                <li ><a href="#about">About</a></li>
-                <li ><a href="#events">Events</a></li>
+                <li ><a href="#testimonial">About</a></li>
+                <li ><a href="#feature">Features</a></li>
                 <li ><a href="news.html">News</a></li>
-                <li ><a href="./QuizApp/index.html">Quiz</a></li>
+                <li ><a href="./QuizApp/game.html">Quiz</a></li>
             </ul>
            
         </div>
@@ -49,66 +49,32 @@
         <div class="chatgpt_response" id="chatgpt_response"></div>
     </div>
 
-    <div class="Events_main" id="events">
+    <div class="Feature" id="feature">
+        <h4 class="head">Features</h4>
 
-    <div class="Events" id="ISS">
-        <div class="Events_image" id="iss_image">
-
-        </div>
-        <div class="Events_Texts" id="iss_text">
-            <div class="latitude">
-                    <label>Latitude :</label><span id="lat"></span>
-             </div>
-             <div class="longitude">
-                <label>Longitude :</label><span id="lon"></span>
-         </div>
-            
-         <div class="altitude">
-            <label>Altitude :</label><span id="alt"></span>
-     </div>
-     <div class="velocity">
-        <label>Velocity :</label><span id="vel"></span>
- </div>
-        </div>
-
-    </div>
-
-    <div class="Events" id="ch3">
-
-        <div class="Events_image" id="ch3_image">
-
-        </div>
-        <div class="Events_Texts" id="ch3_text">
-           
-        </div>
-        
-    </div>
+        <div class="event">
+  
+        <div class="info">
     
-    <div class="Events" id="rover">
-        
-        
-        <div class="Events_image" id="rover_image">
-
-        </div>
-        <div class="Events_Texts" id="rover_text">
-            
-        </div>
-        
+        <img class="event_images" src="./assets/main.jpg"> 
+        <div class="t1">
+            <p class="h2" ><a src="">Launches</a></p> 
+        <p class="text-info" style="text-align:left ;" >We track all orbital launches and a number of popular suborbital launches. Generally we will track all suborbital launches which aim to reach “space” or the Karman line and are live streamed, although, we will also occasionally track others by popular demand.  </p>
     </div>
-    <div class="Events" id="adl1">
-        <div class="Events_image" id="adl1_image">
-
-        </div>
-        <div class="Events_Texts" id="adl1_text">
-            
-        </div>
-        
     </div>
-   
- </div>
+    </div>
+<div class="event">
+  
+    <div class="info">
 
-
-
+    <img class="event_images" src="./assets/main.jpg">
+    <div class="t1">
+        <p class="h2" ><a src="./events/events.html">Events</a></p> 
+    <p class="text-info" > Events consist of information about spacecraft landings, engine tests or spacewalks. </p>
+</div>
+</div>
+</div>
+</div>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
  <script src="https://unpkg.com/split-type"></script>
@@ -119,5 +85,41 @@
 <script src="news.js"></script>
 <script src="chatgpt.js"></script>
 
+<section id="testimonial">
+  <h2 class="testimonial-title">OUR TEAM</h2>
+  <div class="testimonial-container container">
+      <div class ="testimonial-box">
+         
+      <div class="customer-details">
+     <div class="customer-img">   <img src="./assets/ananya.jpeg"/>
+         
+      </div>  
+      <p class="customer-name" id="name">ANANYA PRIYADARSHINI<br>
+     20224018</p></div>  
+      </div>
+      <div class ="testimonial-box">
+         
+      <div class="customer-details">
+     <div class="customer-img">   <img src=""/>
+         
+      </div>  
+      <p class="customer-name">SHAAN KAPOOR<br>
+     20226130</p> </div>  
+      </div>
+      <div class ="testimonial-box">
+          
+      <div class="customer-details">
+     <div class="customer-img">   <img src=""/>
+         
+      </div>  
+      <p class="customer-name">ANKIT RAJ<br>
+      20224020</p> </div>  
+      </div>
+  </div>
+</section>
+
+</section><fotter id="footer">
+    <h2>Space Connect &copy; all rights reserved.</h2>
+</fotter>
 </body>
 </html>

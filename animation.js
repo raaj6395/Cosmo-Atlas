@@ -9,15 +9,15 @@ gsap.from(".navbar",{
     // rotate : 180,
     // scale : 3.5
 })
-gsap.from(".Events",{
-    x:-1500,
+gsap.from(".event",{
+   x:-1500,
     duration: 1.2,
     delay :0.8,
-    stagger:1   //one by one
+    stagger:1  , //one by one
     
 
-    // rotate : 180,
-    // scale : 3.5
+  //  rotate : 180,
+ //scale : 3.5
 })
 // Initialize SplitType on the desired element(s)
 const myText = new SplitType('.quote');
@@ -29,7 +29,6 @@ gsap.to('.char', {
   delay: 0.2,
   duration: .3,
 });
-
 
 
 // gsap.from(".Events_odd",{

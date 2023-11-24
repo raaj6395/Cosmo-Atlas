@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="events.css">
+</head>
+<body>
+    <div id="loader"></div>
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            
+        </div>
+    </main>
+    <template id="template-card">
+        <div class="row">
+        <div class="col-10 col-md-4 col-sm-10 ml-auto mr-auto mb-3">
+        <div class="card-header card-header-image">
+        <a href="/event/ariane-6-full-duration-static-fire">
+        <img id="img" class="img img-raised" style=" object-fit: cover;" src="https://spacelaunchnow-prod-east.nyc3.digitaloceanspaces.com/media/event_images/ariane_6_full-d_image_20230906114144.jpg">
+    
+        </a>
+       </div>
+</div>
+<div class="col-10 col-md-8 col-sm-10 ml-auto mr-auto">
+<h6 class="card-category text-info" id="text-info" >Static Fire</h6>
+<h6 class="card-category" id="date" >Nov 30, 2023</h6>
+<h3 class="card-title">
+<a id="title" href="/event/ariane-6-full-duration-static-fire">Ariane 6 Full-Duration Static Fire</a>
+</h3>
+<span class="badge badge-pill badge-primary" id="pri">Guiana Space Centre, French Guiana</span>
+<span class="badge badge-pill badge-info"></span>
+
+<span class="badge badge-pill badge-info"></span>
+<br>
+<p class="card-description mt-1">\
+        The Ariane 6 combined tests article will perform a full 8-minutes duration static fire of its core stage as part of the launcher's qualification campaign.
+    </p>
+    <a href="/event/ariane-6-full-duration-static-fire" class="btn btn-primary btn-round">
+    <i class="material-icons"></i> Explore
+    </a>
+    </div>
+    </div>
+</template>
+<script src="events.js"></script>
+</body>
+</html>
