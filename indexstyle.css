@@ -104,7 +104,7 @@ z-index: 99;
     height: 64px;
     align-items: center;
     padding: 30px ;
-    background: rgba(0, 0, 0, 0.2);
+    background: #00000033;
 }
 
 
@@ -172,10 +172,10 @@ z-index: 99;
           1px 8px 1px #919191,
           1px 9px 1px #919191,
           1px 10px 1px #919191,
-      1px 18px 6px rgba(16,16,16,0.4),
-      1px 22px 10px rgba(16,16,16,0.2),
-      1px 25px 35px rgba(16,16,16,0.2),
-      1px 30px 60px rgba(16,16,16,0.4);
+      1px 18px 6px #10101066,
+      1px 22px 10px #10101033,
+      1px 25px 35px #10101033,
+      1px 30px 60px #10101066;
   }
   .char {
     transform: translateY(175px);
@@ -227,6 +227,7 @@ z-index: 99;
     font-size: 3rem;
     text-align: left;
     margin-bottom: 1rem;
+   
 }
 
 #stars {
