@@ -9,6 +9,18 @@
     <link rel="stylesheet" href="game.css" />
   </head>
   <body>
+     <nav class="navbar">
+      <div class="navbar-container  container">
+          <span class="home">Home</span>
+          <ul class="nav_li">
+              <li id="bo" onclick="fetchcall('Blue_Origin')">Blue_Origin</li>
+              <li id="sx"  onclick="fetchcall('Space X')" >SpaceX</li>
+              <li id="isro" onclick="fetchcall('ISRO')" >ISRO</li>
+              <li id="news" onclick="fetchcall('NASA')" >NASA</li>
+              <li id="rc" onclick="fetchcall('ROSCOSMOS')" >ROSCOSMOS</a></li>
+          </ul>
+      </div>
+  </nav>
     <div class="container">
       <div id="loader"></div>
       <div id="game" class="justify-center flex-column hidden">
