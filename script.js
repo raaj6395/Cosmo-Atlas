@@ -4,7 +4,7 @@ function toggleChat() {
 }
 
  function sendChatGPTRequest(userInput) {
-    const key = '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';
+    const key = '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';
     const apiUrl = 'https://api.openai.com/v1/chat/completions';
 
     fetch(apiUrl, {
