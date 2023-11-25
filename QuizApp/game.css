@@ -74,6 +74,63 @@
   height: 12rem;
   animation: spin 2s linear infinite;
 }
+.navbar{
+  position:fixed;
+  width:100%;
+  z-index: 99;
+  }
+  
+  .navbar-container{
+      display: flex;
+      justify-content: space-evenly ;
+      height: 84px;
+      align-items: center;
+      padding: 30px ;
+      background: rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .nav_li{
+    justify-content: space-evenly ;
+      display: flex;
+      margin-right: 30px;
+      
+  }
+
+  .home{
+    height: 84px;
+    align-items: center;
+    padding: 30px ;
+    background: rgba(0, 0, 0, 0.2);
+        margin-left: 1.5rem;
+        font-size: 2rem;
+        color: #919191;
+  }
+
+
+  .nav_li li{
+      list-style: none;
+      margin-left: 1.5rem;
+      font-size: 1.8rem;
+  
+  }
+  .logo{
+     
+      margin-left: 10px;
+      font-size: 3rem;
+      color: #919191;
+  }
+  .navbar a{
+      color: #919191;
+      font-weight:bold ;
+      text-decoration: none;
+      cursor: pointer;
+  
+  }
+  .navbar a:hover{
+      color: #ac9511;
+     
+  }
 
 @keyframes spin {
   0% {
