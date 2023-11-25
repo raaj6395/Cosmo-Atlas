@@ -11,7 +11,7 @@
    
 </head>
 <body>
-    <section class="wrapper">
+  <section class="wrapper">
         <div id="stars"></div>
         <div id="stars2"></div>
         <div id="stars3"></div>
@@ -22,6 +22,32 @@
         </div>
     </section>
 
+    <div id="chat-container">
+        <!-- Your website content goes here -->
+
+        <!-- Chatbot icon -->
+        <div id="chat-icon" onclick="toggleChat()">
+            <img src="chat-icon.png" style="border-radius: 50%;" alt="Chat Icon">
+        </div>
+
+        <!-- Chatbot container -->
+        <div id="chatbot-container">
+            <div id="chat-header">
+                <span id="close-chat" onclick="toggleChat()">&times;</span>
+            </div>
+            <div id="chat-messages">
+                <!-- Chat messages will be displayed here -->
+            </div>
+            <div id="chat-input">
+                <input type="text" id="user-input" placeholder="Type your message...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+            
+        </div>
+
+       
+    </div>
+
     <nav class="navbar">
         <div class="navbar-container  container">
             
@@ -29,10 +55,10 @@
           
             <ul class="nav_li">
                 <li  ><a href="#home">Home</a></li>
-                <li ><a href="#about">About</a></li>
-                <li ><a href="#events">Events</a></li>
+                <li ><a href="#testimonial">About</a></li>
+                <li ><a href="#feature">Features</a></li>
                 <li ><a href="news.html">News</a></li>
-                <li ><a href="./QuizApp/index.html">Quiz</a></li>
+                <li ><a href="./QuizApp/game.html">Quiz</a></li>
             </ul>
            
         </div>
@@ -51,63 +77,61 @@
 
     <div class="Events_main" id="events">
 
-        <div class="Events" id="ISS">
-            
-
-            
-            <img src="assets/iss.png" class="Events_image" id="iss_image">
-
-            <div class="Events_Texts" id="iss_text">
-                <div class="latitude">
-                        <label>Latitude :</label><span id="lat"></span>
-                </div>
-                <div class="longitude">
-                    <label>Longitude :</label><span id="lon"></span>
-                </div>
-                
-                <div class="altitude">
-                    <label>Altitude :</label><span id="alt"></span>
-                </div>
-                <div class="velocity">
-                    <label>Velocity :</label><span id="vel"></span>
-                </div>
-            </div>
+    <div class="Events" id="ISS">
+        <div class="Events_image" id="iss_image">
 
         </div>
-
-        <div class="Events" id="ch3">
-
-            <div class="Events_image" id="ch3_image">
-
-            </div>
-            <div class="Events_Texts" id="ch3_text">
+        <div class="Events_Texts" id="iss_text">
+            <div class="latitude">
+                    <label>Latitude :</label><span id="lat"></span>
+             </div>
+             <div class="longitude">
+                <label>Longitude :</label><span id="lon"></span>
+         </div>
             
-            </div>
+         <div class="altitude">
+            <label>Altitude :</label><span id="alt"></span>
+     </div>
+     <div class="velocity">
+        <label>Velocity :</label><span id="vel"></span>
+ </div>
+        </div>
+
+    </div>
+
+    <div class="Events" id="ch3">
+
+        <div class="Events_image" id="ch3_image">
+
+        </div>
+        <div class="Events_Texts" id="ch3_text">
+           
+        </div>
+        
+    </div>
+    
+    <div class="Events" id="rover">
+        
+        
+        <div class="Events_image" id="rover_image">
+
+        </div>
+        <div class="Events_Texts" id="rover_text">
             
         </div>
         
-        <div class="Events" id="rover">
-            
-            
-            <div class="Events_image" id="rover_image">
-
-            </div>
-            <div class="Events_Texts" id="rover_text">
-                
-            </div>
-            
-        </div>
-        <div class="Events" id="adl1">
-            <div class="Events_image" id="adl1_image">
-
-            </div>
-            <div class="Events_Texts" id="adl1_text">
-                
-            </div>
-            
-        </div>
-   
     </div>
+    <div class="Events" id="adl1">
+        <div class="Events_image" id="adl1_image">
+
+        </div>
+        <div class="Events_Texts" id="adl1_text">
+            
+        </div>
+        
+    </div>
+   
+ </div>
 
 
 
@@ -120,6 +144,44 @@
 <script src="iss.js"></script>
 <script src="news.js"></script>
 <script src="chatgpt.js"></script>
+<script src="script.js"></script>
 
+
+<section id="testimonial">
+  <h2 class="testimonial-title">OUR TEAM</h2>
+  <div class="testimonial-container container">
+      <div class ="testimonial-box">
+         
+      <div class="customer-details">
+     <div class="customer-img">   <img src="./assets/ananya.jpeg"/>
+         
+      </div>  
+      <p class="customer-name" id="name">ANANYA PRIYADARSHINI<br>
+     20224018</p></div>  
+      </div>
+      <div class ="testimonial-box">
+         
+      <div class="customer-details">
+     <div class="customer-img">   <img src=""/>
+         
+      </div>  
+      <p class="customer-name">SHAAN KAPOOR<br>
+     20226130</p> </div>  
+      </div>
+      <div class ="testimonial-box">
+          
+      <div class="customer-details">
+     <div class="customer-img">   <img src=""/>
+         
+      </div>  
+      <p class="customer-name">ANKIT RAJ<br>
+      20224020</p> </div>  
+      </div>
+  </div>
+</section>
+
+</section><fotter id="footer">
+    <h2>Space Connect &copy; all rights reserved.</h2>
+</fotter>
 </body>
 </html>

@@ -17,6 +17,79 @@ body{
     background-repeat: no-repeat;
 }
 
+#chat-container {
+    position: relative;
+}
+
+#chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#chat-icon img {
+    width: 50px; /* Adjust the size as needed */
+}
+
+#chatbot-container {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px; /* Adjust the width as needed */
+    background-color: #1E1E1E;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#chat-header {
+    background-color: red;
+    color: #1E1E1E;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#close-chat {
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#chat-messages {
+    padding: 10px;
+    max-height: 200px; /* Adjust the height as needed */
+    overflow-y: auto;
+}
+
+#chat-input {
+    padding: 10px;
+    display: flex;
+    background-color: #1E1E1E;
+    color: #1E1E1E;
+}
+
+#user-input {
+    flex: 1;
+    padding: 8px;
+    margin-right: 5px;
+}
+
+button {
+    padding: 8px;
+    background-color: red;
+    color: #1E1E1E;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: red;
+}
+
 
 
 .navbar{
@@ -109,28 +182,27 @@ z-index: 99;
     transition: transform .8s;
   }
 
-  .Events_main{
+  .event{
     margin-top: 20px;
     margin-right: 20px;
-    margin-left: 20px;
+    margin-left: 30px;
+   display: flex;
+    color:whitesmoke;
   }
-
-  .Events{
+  .head{
+    font-size: 5rem;
+    text-align: center;
+    color: aliceblue;
+  }
+.event_images{
+    height: 30vh;
+    border-radius: 50%;
     display: flex;
   }
 
-  #ISS {
-
-    display: flex;
-    justify-content: space-between;
-    
-
-
-
-  }
   .Events_image{
-    height: 45vh;
-    width: 70%;
+    height: 40vh;
+    width: 40%;
     margin-top: 10px;
     padding: 20px;
     background-position: center;
@@ -141,49 +213,37 @@ z-index: 99;
     
     
 }
-/* @keyframes about-text-animation
-{100%{
-    transform: translate(0);
-}} */
-.Events_Texts{
-    height: 40vh;
-    width: 60%;
-}
-.latitude, .longitude,.altitude,.velocity{
-    color: white;
-    font-size: 2rem;
+  
+.text-info{
+    color: #fff;
+    font-size: 2.1rem;
     text-align: center;
-    justify-content: center;
-    row-gap: 1.5rem;
-    font-weight: 400;
+    display: flex;
+
 }
-/*
+.t2{
+    color: #fff;
+    font-size: 2.7rem;
+   
+}
 #iss_image{
-    /*background-image: url(assets/iss.png);  */
+    background-image: url(assets/space.jpg);  
     /* animation:about-text-animation 2s ease-in-out forwards;
     transform:translateX(-150%); */
-   
-
-    
-
-
-#ch3_image{
-    background-image: url(assets/moon.jpeg);  
-    order:2;
-    /* animation:about-text-animation 2s ease-in-out forwards;
-    transform:translateX(150%); */
     
 }
-#ch3_text{
-   order:1;
-}
-#rover_image{
-    background-image: url(assets/rover.jpg);
-    /* animation:about-text-animation 2s ease-in-out forwards;
-    transform:translateX(-150%); */
-   
-}
 
+.info{
+  display: flex;
+    text-align: center;
+    text-decoration: none;
+}
+.h2{
+    color: aliceblue;
+    font-size: 3rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
 
 #stars {
     width: 1px;
@@ -750,4 +810,3 @@ z-index: 99;
         transform: translateY(-2000px);
     }
 }
-
