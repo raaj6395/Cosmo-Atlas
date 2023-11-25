@@ -6,8 +6,8 @@ function reload() {
     window.location.reload();
 }
 
-async function fetchSpace() {
-    const res = await fetch(`https://ll.thespacedevs.com/2.2.0/launch/upcoming/?search=SpaceX`, {
+async function fetchSpace(stringg) {
+    const res = await fetch(`https://ll.thespacedevs.com/2.2.0/launch/upcoming/?search=${stringg}`, {
         method : 'GET',
         header : {
             'accept' : 'application/json'
