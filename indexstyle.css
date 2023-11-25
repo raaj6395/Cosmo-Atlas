@@ -17,6 +17,79 @@ body{
     background-repeat: no-repeat;
 }
 
+#chat-container {
+    position: relative;
+}
+
+#chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#chat-icon img {
+    width: 50px; /* Adjust the size as needed */
+}
+
+#chatbot-container {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px; /* Adjust the width as needed */
+    background-color: #1E1E1E;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#chat-header {
+    background-color: red;
+    color: #1E1E1E;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#close-chat {
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#chat-messages {
+    padding: 10px;
+    max-height: 200px; /* Adjust the height as needed */
+    overflow-y: auto;
+}
+
+#chat-input {
+    padding: 10px;
+    display: flex;
+    background-color: #1E1E1E;
+    color: #1E1E1E;
+}
+
+#user-input {
+    flex: 1;
+    padding: 8px;
+    margin-right: 5px;
+}
+
+button {
+    padding: 8px;
+    background-color: red;
+    color: #1E1E1E;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: red;
+}
+
 
 
 .navbar{

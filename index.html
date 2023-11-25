@@ -22,6 +22,32 @@
         </div>
     </section>
 
+    <div id="chat-container">
+        <!-- Your website content goes here -->
+
+        <!-- Chatbot icon -->
+        <div id="chat-icon" onclick="toggleChat()">
+            <img src="chat-icon.png" style="border-radius: 50%;" alt="Chat Icon">
+        </div>
+
+        <!-- Chatbot container -->
+        <div id="chatbot-container">
+            <div id="chat-header">
+                <span id="close-chat" onclick="toggleChat()">&times;</span>
+            </div>
+            <div id="chat-messages">
+                <!-- Chat messages will be displayed here -->
+            </div>
+            <div id="chat-input">
+                <input type="text" id="user-input" placeholder="Type your message...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+            
+        </div>
+
+       
+    </div>
+
     <nav class="navbar">
         <div class="navbar-container  container">
             
@@ -43,11 +69,6 @@
     
     </div>
 
-    <div class="chatgpt">
-        <input class="chatgpt_user_input" id="chatgpt_user_input"></input>
-        <button class="chatgpt_button" id="chatgpt_button">Submit</button>
-        <div class="chatgpt_response" id="chatgpt_response"></div>
-    </div>
 
     <div class="Feature" id="feature">
         <h4 class="head">Features</h4>
@@ -84,6 +105,8 @@
 <script src="iss.js"></script>
 <script src="news.js"></script>
 <script src="chatgpt.js"></script>
+<script src="script.js"></script>
+
 
 <section id="testimonial">
   <h2 class="testimonial-title">OUR TEAM</h2>
