@@ -17,7 +17,7 @@ let questions = [];
 fetch('https://api.openai.com/v1/chat/completions', {
   method: 'POST',
   headers: {
-    'Authorization': 'Bearer ' + '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',
+    'Authorization': 'Bearer ' + 'place your key here',
     'Content-type': 'application/json'
   },
   // body: '{\n  "model": "gpt-3.5-turbo-1106",\n  "response_format": {\n    "type": "json_object"\n  },\n  "messages": [\n    {\n      "role": "system",\n      "content": "You are a helpful assistant designed to output JSON."\n    },\n    {\n      "role": "user",\n      "content": "make a quiz questions with answers based on space exploration and give atleast 10 questions make it multiple choice questions return it as a result of a request made by a browser inform of a json text which i can parse do not write naything extra in response to my request only json"\n    }\n  ]\n}',
@@ -33,7 +33,7 @@ fetch('https://api.openai.com/v1/chat/completions', {
       },
       {
         'role': 'user',
-        'content': `make a quiz questions with answers based on chandrayaan and give atleast 10 questions make it multiple choice questions return it as a result of a request made by a browser inform of a json text which i can parse use this json format while returning
+        'content': `make a quiz questions with answers based on space exploration and isro and nasa and give atleast 10 questions make it multiple choice questions return it as a result of a request made by a browser inform of a json text which i can parse use this json format while returning
         [
           {
             "question": "Inside which HTML element do we put the JavaScript??",
@@ -115,7 +115,7 @@ getNewQuestion = () => {
     if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
         //go to the end page
-        return window.location.assign('./end.html');
+        return window.location.assign('/end.html');
     }
     questionCounter++;
     progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
