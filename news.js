@@ -1,4 +1,4 @@
-const API_KEY = "71554277599f4677822531fb0d9f9940";
+var mykey = config.newsAPI_KEY;
 const url = "https://newsapi.org/v2/everything?q=";
 
 window.addEventListener("load", () => fetchNews("Space"));
@@ -8,7 +8,7 @@ function reload() {
 }
 
 async function fetchNews(query) {
-    const res = await fetch(`${url}${query}&apiKey=${API_KEY}`);
+    const res = await fetch(`${url}${query}&apiKey=${mykey}`);
     const data = await res.json();
     bindData(data.articles);
 }
