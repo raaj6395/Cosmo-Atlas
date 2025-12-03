@@ -2,6 +2,18 @@
 
 Cosmo-Atlas is a frontend web project that aggregates multiple space-related experiences into a single interface focused on space exploration and missions.
 
+# Dashboard Preview
+
+![Dashboard Preview](/assets/r1.png)
+
+# Launches Preview
+
+![Launches Preview](/assets/r2.png)
+
+# Events Preview
+
+![Events Preview](/assets/r3.png)
+
 ## Features
 
 - **Landing page**
